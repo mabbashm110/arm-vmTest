@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "virtualMachineName": {
+            "value": "VM01"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "adminUsername": {
+            "value": "testadmin"
+        },
+        "virtualNetworkName": {
+            "value": "iisvm-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "vm01194"
+        },
+        "networkSecurityGroupName": {
+            "value": "IISVM-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "availabilitySetName": {
+            "value": "vms"
+        },
+        "availabilitySetPlatformFaultDomainCount": {
+            "value": "2"
+        },
+        "availabilitySetPlatformUpdateDomainCount": {
+            "value": "5"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "iisvm"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/iisvm"
+        },
+        "addressPrefix": {
+            "value": "10.1.1.0/24"
+        },
+        "subnetName": {
+            "value": "iisvm-subnet"
+        },
+        "subnetPrefix": {
+            "value": "10.1.1.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "VM01-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "19:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "UTC"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Disabled"
+        }
+    }
+}
